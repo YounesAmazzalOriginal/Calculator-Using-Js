@@ -7,11 +7,11 @@
 }
 
 :root {
-  --background-color: #ffe8ef;
-  --buttons-background-color: #ffb3c1;
-  --text-color-1: #c26580;
+  --background-color: #171717;
+  --buttons-background-color: #303030;
+  --text-color-1: white;
   --text-color-2: #4d4d4d;
-  --calculator-background-color: #fff;
+  --calculator-background-color: black;
 }
 
 body {
@@ -57,17 +57,16 @@ button {
   height: 20px;
   border-radius: 100%;
   cursor: pointer;
-  position: relative;
 }
-.radioInput:checked {
-  appearance: none;
-}
-
 .radioInput:nth-child(1) {
   background-color: black;
 }
 .radioInput:nth-child(2) {
-  background-color: var(--buttons-background-color);
+  background-color: #ffb3c1;
+}
+
+.radioInput:checked {
+  appearance: none;
 }
 
 .btn-theme {
@@ -85,7 +84,7 @@ button {
   right: 0px;
   margin-top: 10px;
   margin-right: 10px;
-  color: white;
+  color: var(--buttons-background-color);
   font-size: 0.9rem;
   transition: all 0.5s;
 }
@@ -99,7 +98,7 @@ button {
   font-size: 2.5rem;
   padding: 10px 15px;
   color: var(--text-color-1);
-  background-color: #fefefe;
+  background-color: transparent;
 }
 .receptor::placeholder {
   color: var(--text-color-1);
@@ -124,12 +123,9 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.buttons-container button:hover {
-  background-color: #ff9bb1;
-}
-
 .buttons-container .btn-1 {
-  color: var(--text-color-1);
+  background-color: #ec6f00;
+  /* color: var(--text-color-1); */
 }
 
 .buttons-container button:nth-last-child(1),
